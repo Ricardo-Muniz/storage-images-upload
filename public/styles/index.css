@@ -1,0 +1,192 @@
+/*
+GERAL PRE SMART-PHONES
+*/
+body {
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.bo {
+    background-color: #181818 !important;
+}
+
+/*
+QUERIES SMARTPHONE
+*/
+@media only screen and (min-width:100px) and (max-width:1000px) {
+
+    /*
+    GERAL
+    */
+    body {
+        max-width: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .bo {
+        background-color: #181818 !important;
+    }
+
+    .master-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .master-content .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        margin-bottom: 2em;
+    }
+
+    .card h5 {
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 0.4em;
+        margin-top: 0.2em
+    }
+
+    .card p {
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    /* Esconde o input */
+    input[type='file'] {
+        display: none;
+    }
+
+    label {
+        padding: 9px 20px 9px 20px !important;
+        border-radius: 4px !important;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px !important;
+        margin: 0px !important;
+        margin-bottom: 4px !important;
+        background: #7162B6 !important;
+        border-style: none !important;
+        margin-right: 10px !important;
+
+    }
+
+    /*
+    UPLOAD BUTTON
+    */
+    button {
+        border-style: none;
+        padding: 9px 20px 9px 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        color: aliceblue;
+        background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+        border-radius: 4px !important;
+        margin: 0px !important;
+        cursor: pointer;
+    }
+}
+
+/*
+QUERIES PARA DESKTOP
+*/
+@media (min-width:1020px) {
+
+    /*
+    GERAL
+    */
+    body {
+        max-width: 100%;
+        width: 100%;
+        height: auto !important;
+        overflow-x: hidden;
+
+    }
+
+    .bo {
+        background-color: #181818 !important;
+        height: auto !important;
+
+    }
+
+    .master-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center !important;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .master-content .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        margin-top: 1.2em;
+        margin-left: 20px;
+    }
+
+    .card h5 {
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 0.4em;
+        margin-top: 0.2em;
+    }
+
+    #text-p {
+        margin-right: 130px;
+    }
+
+    .card p {
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    /* Esconde o input */
+    input[type='file'] {
+        display: none;
+    }
+
+    label {
+        padding: 9px 20px 9px 20px !important;
+        border-radius: 4px !important;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px !important;
+        margin: 0px !important;
+        margin-bottom: 4px !important;
+        background: #7162B6 !important;
+        border-style: none !important;
+        margin-right: 10px !important;
+
+    }
+
+    /*
+    UPLOAD BUTTON
+    */
+    button {
+        border-style: none;
+        padding: 9px 20px 9px 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        color: aliceblue;
+        background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+        border-radius: 4px !important;
+        margin: 0px !important;
+        cursor: pointer;
+    }
+
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="pt">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/" rel="next">
+    <title>{{title}}</title>
+    <link rel="stylesheet" type="text/css" href="styles/stylesaos.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap&subset=latin-ext,vietnamese" rel="stylesheet">
+    <link rel="icon" type="image/png" href="imagens/testelogo.png" sizes="100x100">
+    <link href="LivIconsEvo/css/LivIconsEvo.css" rel="stylesheet">
+    <link href="/" rel="stylesheet">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#181818">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#181818">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#181818">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body class="bo" onload="load()">
+
+    <section class="master-content">
+        <div class="card" style="width: 18rem;">
+            <img id="output" class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_174309e5f89%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_174309e5f89%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.1953125%22%20y%3D%2296.3%22%3E286x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Conteudo de imagem</h5>
+                <p class="card-text">Imagens para servir outro projeto ou para ser utilizada em alguma outra midia.</p>
+                <form id="form-image" method="post" enctype="multipart/form-data" action="/upload">
+                    <input type="file" class="file" data-browse-on-zone-click="true" id="focus-input-img" name="files[]" multiple onchange="document.getElementById('output').src = window.URL.createObjectURL(this.files[0])">
+
+                    <label href="#" for="focus-input-img" class="btn btn-primary">Adicionar imagem</label>
+
+                    <button type="submit" form="form-image" value="Submit">
+                        Fazer upload
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img id="output-anexo" class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_174309e5f89%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_174309e5f89%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.1953125%22%20y%3D%2296.3%22%3E286x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Anexos</h5>
+                <p class="card-text" id="text-p">PDF's, arquivos WORD e/ou documentos sobre a exploit.</p>
+                <form id="form-anexo" method="post" enctype="multipart/form-data" action="/upload">
+                    <input type="file" class="file" data-browse-on-zone-click="true" id="focus-input" name="files[]" multiple onchange="document.getElementById('output-anexo').src = window.URL.createObjectURL(this.files[0])">
+
+                    <label href="#" for="focus-input" class="btn btn-primary">Adicionar anexo</label>
+
+                    <button type="submit" form="form-anexo" value="Submit">
+                        Fazer upload
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+    </script>
+</body></html>
